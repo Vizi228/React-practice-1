@@ -1,0 +1,24 @@
+.body{
+  width: 90%;
+}
+.textarea{
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: grey;
+  width: 100%;
+  padding: 0;
+}
+.textarea::placeholder{
+  color: #fff;
+}
+.input{
+}
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn{
+  background-color: green;
+}
