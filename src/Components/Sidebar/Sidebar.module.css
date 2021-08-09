@@ -7,6 +7,9 @@
 .menu__link{
   color: #fff;
 }
+.menu__link.active{
+  color: gold;
+}
 .navigation{
   margin-top: 50px;
 }
