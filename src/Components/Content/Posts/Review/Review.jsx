@@ -12,13 +12,10 @@ const Review = (props) => {
     </div>
   );
 }
-let ReviewInfo = [
-  { src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: "Hi, its my first post"},
-  { src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: "Hi"}
-]
-
-let ReviewData = ReviewInfo.map( rev => <Review text = {rev.text} src = {rev.src} />)
 
 
 
-export default ReviewData;
+
+
+
+export default Review;
