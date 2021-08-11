@@ -8,19 +8,9 @@
   font-size: 28px;
   font-weight: 500;
 }
-.item__link{
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
-}
-.item__link.active{
-  color: gold;
-}
 .contacts{
   border-right: 1px solid grey ;
   padding-right: 10px;
   margin-right: 10px;
 }
-.messages{
-  margin-left: 50%;
-}
+

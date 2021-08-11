@@ -1,5 +1,5 @@
 import posts from'./Posts.module.css';
-import Review from './Review/Review';
+import ReviewData from './Review/Review';
 
 const Posts = () => {
   return (
@@ -16,8 +16,7 @@ const Posts = () => {
            </form>
         </div>
         <div className={posts.review}>
-            <Review text="Hey, it`s my first posts" />
-            <Review text="Hey, i`m Myroslav" />
+            { ReviewData }
         </div>
     </div>
   );

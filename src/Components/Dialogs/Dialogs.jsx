@@ -1,5 +1,10 @@
 import dialogs from './Dialogs.module.css'
 import { NavLink } from 'react-router-dom';
+import DialogsData from './Dialog/Dialog'
+import MessagesData from './Message/Message';
+
+
+
 
 const Dialogs = () => {
   return (
@@ -8,33 +13,11 @@ const Dialogs = () => {
       <div className={dialogs.body}>
         <div className={dialogs.contacts}>
           <div className={dialogs.inner}>
-            <div className={dialogs.item}>
-              <NavLink className={dialogs.item__link} activeClassName={dialogs.active} to="/Dialogs/1">Myron</NavLink>
-            </div>
-            <div className={dialogs.item}>
-              <NavLink className={dialogs.item__link} activeClassName={dialogs.active} to="/Dialogs/2">Bodya</NavLink>
-            </div>
-            <div className={dialogs.item}>
-              <NavLink className={dialogs.item__link} activeClassName={dialogs.active} to="/Dialogs/3">Andrew</NavLink>
-            </div>
-            <div className={dialogs.item}>
-              <NavLink className={dialogs.item__link} activeClassName={dialogs.active} to="/Dialogs/4">Johny</NavLink>
-            </div>
-            <div className={dialogs.item}>
-              <NavLink className={dialogs.item__link} activeClassName={dialogs.active} to="/Dialogs/5">Oleg</NavLink>
-            </div>
-            <div className={dialogs.item}>
-              <NavLink className={dialogs.item__link} activeClassName={dialogs.active} to="/Dialogs/6">Igor</NavLink>
-            </div>
+           { DialogsData }
           </div>
         </div>
         <div className={dialogs.messages}>
-          <div className={dialogs.message}>Hi</div>
-          <div className={dialogs.message}>Hi</div>
-          <div className={dialogs.message}>Ho</div>
-          <div className={dialogs.message}>GF</div>
-          <div className={dialogs.message}>HF</div>
-          <div className={dialogs.message}>GT</div>
+          { MessagesData }
         </div>
       </div>
     </div>
