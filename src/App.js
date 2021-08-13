@@ -3,7 +3,7 @@ import './App.css';
 import Content from './Components/Content/Content.jsx';
 import Dialogs from './Components/Dialogs/Dialogs';
 import Header from './Components/Header/Header.jsx';
-import Sidebar from './Components/Sidebar/Sidebar';
+import Sitebar from './Components/Sitebar/Sitebar';
 
 
 
@@ -15,10 +15,10 @@ const App = (props) => {
         <div className="App__container _container">
           <Header />
           <div className="Content__body">
-            <Sidebar />
+            <Sitebar state={props.state.sitebar}/>
             <div className="Content__pages">
-              <Route path='/Profile'render={ () => <Content ReviewInfo={props.ReviewInfo}/>} />
-              <Route path='/Dialogs' render={ () => <Dialogs messageData={ props.MessageData } dialogsData ={ props.DialogsData } />} />
+              <Route path='/Profile'render={ () => <Content state={props.state.profilePage}/>} />
+              <Route path='/Dialogs' render={ () => <Dialogs state={ props.state.dialogsPage} />} />
             </div>
           </div>
         </div>
