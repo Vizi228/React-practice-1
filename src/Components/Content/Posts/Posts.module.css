@@ -5,14 +5,15 @@
   resize: none;
   border: none;
   outline: none;
-  background-color: grey;
+  background-color: black;
   width: 100%;
   padding: 0;
 }
 .textarea::placeholder{
   color: #fff;
 }
-.input{
+.textarea{
+  color: #fff;
 }
 .button{
   width: 100%;

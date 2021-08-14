@@ -1,3 +1,6 @@
+.Sitebar{
+  width: 15%;
+}
 .body{
   background-color: green;
   padding: 10px 10px 10px 10px;
@@ -24,6 +27,7 @@
   max-width: 170px;
   overflow: auto;
   padding-top: 10px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }

@@ -1,9 +1,17 @@
-let State = {
+let renderPage = () => {
+
+}
+export const subscribe = (observer) =>{
+  renderPage = observer;
+}
+
+let state = {
   profilePage: {
     ReviewInfo: [
-      { src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: "Hi, its my first post"},
-      { src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: "Hi"}
-    ]
+      { id:1 , src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: "Hi, its my first post"},
+      { id:2 , src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: "Hi"}
+    ],
+    InputText: "" 
   },
   dialogsPage: {
     MessageData:[
@@ -31,5 +39,17 @@ let State = {
     ]
   }
 }
+window.state = state;
+export let Post = () => {
+  let newPost = { id:3 , src: "https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg", text: state.profilePage.InputText,};
+  state.profilePage.ReviewInfo.push(newPost);
+  state.profilePage.InputText = '';
+  renderPage();
+}
 
-export default State;
+export let inputChange = (text) => {
+  state.profilePage.InputText = text;
+  renderPage();
+}
+
+export default state;

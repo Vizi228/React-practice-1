@@ -5,7 +5,7 @@ import SitebarFriends from './SitebarFriends/SitebarFriends'
 const Sitebar = (props) => {
   let friendsData = props.state.SitebarFriends.map( friends => <SitebarFriends image={friends.image} name={friends.name} /> )
   return (
-         <div className={sitebar.Sidebar}>
+         <div className={sitebar.Sitebar}>
            <div className={sitebar.body}>
              <ul className={sitebar.menu}>
                <li className={sitebar.menu__item}><NavLink className={sitebar.menu__link} activeClassName={sitebar.active} to="/Profile">Profile</NavLink></li>

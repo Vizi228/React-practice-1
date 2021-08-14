@@ -16,7 +16,7 @@ const Content = (props) => {
                 <Profile />
             </div>
              <div className={content.posts}>
-                <Posts info={props.state.ReviewInfo}/>
+                <Posts info={props.state.ReviewInfo} inputChange={props.inputChange} inputText={props.state.InputText} post={props.post} />
              </div>
            </div>
          </div>
